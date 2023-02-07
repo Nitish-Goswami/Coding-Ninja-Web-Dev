@@ -1,0 +1,37 @@
+main {
+    /* Initailize Flex box by default flex - direction is row */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main div {
+    height: 30vh;
+    width: 30vw;
+    background-color: red;
+    border: 1px solid black;
+    margin: 10px;
+    
+}
+
+/* Accessing the first div and here flex shrink allow item to take its width instead of shrinking */
+main :first-child {
+    /* flex-shrink: 0;
+    background-color: cyan; */
+}
+
+#parent {
+    background-color: cyan;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#child {
+    background-color: red;
+    height: 200px;
+    width: 200px;
+}
+
